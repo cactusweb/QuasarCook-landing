@@ -1,0 +1,25 @@
+nav{
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+
+    @media screen and ( max-width: 600px ) {
+     
+        img{
+            height: 65px;
+        }   
+    }
+
+    a{
+        background: #FFFFFF;
+        color: #57349A;
+        border-radius: 10px;
+        width: 150px;
+        height: 44px;
+        justify-self: end;
+        &:hover{
+            background: #B771E2;
+            color: #fff;
+        }
+    }
+}

@@ -1,0 +1,53 @@
+header{
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: auto 1fr;
+    box-sizing: border-box;
+    padding-top: 30px;
+    max-width: 1390px;
+    margin: 0px auto;
+    box-sizing: content-box;
+}
+
+h1, p{
+    margin: 0px;
+    text-align: center;
+    color: #fff;
+}
+
+h1{
+    font-size: 96px;
+    font-weight: 800;
+    @media screen and ( max-width: 600px ) {
+        font-size: 64px;
+    }
+}
+
+p{
+    font-size: 24px;
+    font-weight: 600;
+    @media screen and ( max-width: 600px ) {
+        font-size: 18px;
+    }
+}
+
+button{
+    width: 150px;
+}
+
+
+.info{
+    display: grid;
+    row-gap: 50px;
+
+    justify-self: center;
+    align-self: center;
+    justify-items: center;
+
+    .descripts{
+        display: grid;
+        row-gap: 10px;
+    }
+    position: relative;
+    top: -50px;
+}

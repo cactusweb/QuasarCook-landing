@@ -1,0 +1,567 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;700;800&display=swap');
+
+*{transition: .4s;}
+body,html .content{
+    transition: none;
+}
+/* ngx-spinner{
+    position: absolute;
+} */
+.none-pointer{
+    pointer-events: none;
+}
+
+.content{padding: 10px 0px;}
+
+
+.btn{
+    box-sizing: border-box;
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+
+    font-weight: 600;
+    border: none;
+    margin: 0px;
+    padding: 0px;
+    border-radius: 10px;
+    text-transform: uppercase;
+    transition: .3s;
+    color: white;
+    background-color: #B771E2;
+    &:hover:not(:disabled){
+        background-color: #9059B2;
+    }
+
+    &:disabled{
+        cursor: default
+    }
+}
+
+.btn-big{
+    @extend .btn;
+    height: 44px;
+    font-size: 14px;
+}
+
+.btn-small{
+    @extend .btn;
+    height: 40px;
+    font-size: 16px;
+}
+
+
+
+
+*::-webkit-scrollbar{
+    width:3px;
+    height: 3px;
+}
+  
+*::-webkit-scrollbar-thumb{
+    border: none;
+    border-radius: 20px;
+    background: linear-gradient(to top, #7a01ff, #e967ff, #69ecf3);
+}
+  
+*::-webkit-scrollbar-thumb:hover{
+    background: linear-gradient(to top, #6b00dd, #ce5ce2, #61dae0);
+}
+  
+*::-webkit-scrollbar-track{
+    border-width:0;
+    background: #191f33;
+}
+  
+
+html, body{
+    margin: 0;
+    padding: 0;
+    min-height:100vh;
+}
+
+
+.content{
+    background-image: url("/assets/img/background/all.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+}
+
+.admin-content{
+    background-image: none;
+    background-color: #21355B;
+}
+
+
+*, select, input{
+    outline: none;
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+
+@media (min-width: 1471px){
+    .standart-padding{
+        padding-right: 200px;
+        padding-left: 200px;
+    }
+}
+@media (min-width: 1267px) and (max-width: 1470px){
+    .standart-padding{
+        padding-right: 200px;
+        padding-left: 200px;
+    }
+    
+}
+@media (min-width: 1161px) and (max-width: 1266px){
+    .standart-padding{
+        padding-right: 150px;
+        padding-left: 150px;
+    }
+    
+}
+@media (max-width: 1160px){
+    .standart-padding{
+        padding-right: 50px;
+        padding-left: 50px;
+
+    }
+}
+@media (max-width: 900px){
+    .standart-padding{
+        padding-right: 20px;
+        padding-left: 20px;
+
+    }
+}
+
+.indent{
+    padding: 0px 400px;
+}
+
+div{
+    box-sizing: border-box;
+}
+
+a, button, input[type=submit]{
+    cursor: pointer;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.thin-style{
+    font-weight: 100;
+}
+.bold-style{
+    font-weight: 700;
+}
+.light-style{
+    font-weight: 300;
+}
+.regular-style{
+    font-weight: 400;
+}
+.medium-style{
+    font-weight: 500;
+}
+.semibold-style{
+    font-weight: 600;
+}
+.pointer{
+    cursor: pointer;
+}
+.relative{
+    position: relative;
+}
+.absolute{
+    position: absolute;
+}
+.hidden{
+    opacity: 0;
+}
+.unvisible{
+    visibility: hidden;
+}
+
+
+.font-24{
+    font-size: 24px;
+}
+
+.gradient{
+    align-self: center;
+    display: grid;
+    align-items: center;
+    background: linear-gradient(to left, #7a01ff, #e967ff, #69ecf3);
+    padding: 3px;
+    border-radius: 25px;
+}
+@media (max-width: 600px){
+    .gradient{
+        padding: 2px;
+    }
+}
+
+.nameOfDescript{
+    margin: 0px;
+    padding: 0px;
+    font-size: 36px;
+    font-weight: 700 !important;
+    text-transform: uppercase;
+}
+@media(max-width: 600px){
+    .nameOfDescript{font-size: 24px;}
+}
+
+.window{
+    display: grid;
+    justify-items: center;
+    align-items: start;
+
+    max-width: 1550px;
+
+    position: relative;
+
+    padding: 3% 5%;
+    width: 55%;
+    height: 75%;
+    box-sizing: border-box;
+
+    background-color: #0F1D38;
+    border-radius: 30px;
+    color: white;
+}
+@media(max-width: 940px){
+    .window{width: 70%;}
+}
+@media(max-width: 700px){
+    .window{
+        height: 50%;
+    }
+}
+@media(max-width: 550px){
+    .window{width: 90%}
+}
+
+.admin-window{
+    width: 80%;
+    min-height: 80%;
+}
+
+@media(max-width: 700px){
+    .admin-window{
+        width: 100%;
+        height: 100%;
+        border-radius: 0%;
+
+    }
+}
+
+.discord-login-btn{
+    display: grid;
+    place-items: center;
+    justify-self: center;
+    align-self: center;
+    grid-template-columns: auto 1fr;
+    grid-column-gap: 9px;
+
+    padding: 7px 10px;
+    border-radius: 30px;
+    border: 2px solid #E5E5E5;
+
+    background-color: #21355B;
+    box-sizing: border-box;
+
+    font-size: 12px;
+    color: white;
+
+    margin: 0px 10px;
+    transition: 0.4s;
+}
+
+.discord-login-btn img{
+    height: 13.2px;
+}
+
+@media (max-width: 600px){
+    .discord-login-btn{
+        border: 1px solid #e5e5e5;
+    } 
+}
+
+.discord-login-btn:hover{
+    background-color: #0F1D38;
+}
+
+.window .simple-input{
+    border-radius: 20px;
+    width: 100%;
+    position: relative;
+    height: 42px;
+    background-color: #21355B;
+    border: 2px solid #E5E5E5;
+    box-sizing: border-box;
+    display: grid;
+    justify-items: stretch;
+    align-items: stretch;
+}
+
+.simple-input input[type="text"]{
+    box-sizing: border-box;
+    padding: 20px 0px;
+    text-align: center;
+    background: none;
+    border: none;
+    max-height: 40px;
+    font-size: 18px;
+    color: white;
+}
+
+.simple-input button{
+    box-sizing: border-box;
+    display: grid;
+    border: 2px solid #E5E5E5;
+    place-items: center;
+    background: #21355B;
+    /* max-height: 40px; */
+    position: absolute;
+    font-size: 18px;
+    color: white;
+    width: 52px;
+    height: 42px;
+    border-radius: 20px;
+    top: -2px;
+    right: -2px;
+}
+
+
+.simple-input button img{
+    transition: 0.25s;
+    width: 22px;
+}
+.simple-input button:hover img, .simple-input button:active img{
+    margin-left: 10px;
+}
+
+
+@media(max-width: 600px){
+    .window .simple-input{
+        height: 32px;
+        border: 1px solid #E5E5E5;
+    }
+    .simple-input input[type="text"]{
+        font-size: 12px;
+        padding: 10px 0px;
+        max-height: 30px;
+    }
+    .simple-input button img{
+        width: 15px;
+    }
+    .simple-input button{
+        height: 32px;
+        width: 40px;
+        top: -1px;
+        right: -1px;
+        border: 1px solid #E5E5E5;
+    }
+    .simple-input button:hover img, .simple-input button:active img{
+        margin-left: 10px;
+    }
+}
+
+
+ngx-spinner{
+    z-index: 1;
+    border-radius: inherit;
+    > div{
+        border-radius: inherit;
+    }
+}
+
+app-pop-up{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.548);
+    backdrop-filter: blur(2px) ;
+    z-index: 20;
+}
+
+app-checkout, app-checkout-widget{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.548);
+    backdrop-filter: blur(2px) ;
+    z-index: 20;
+    
+}
+    
+
+
+
+.admin-input{
+    padding: 5px 15px;
+
+    background-color: #21355B;
+    border: 2px solid #E5E5E5;
+    border-radius: 30px;
+    color: white;
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+
+    transition: 0.2s;
+}
+
+button.admin-input{
+    padding: 2px 20px;
+}
+
+button.admin-input:hover{
+    background-color: #0F1D38;
+}
+
+
+
+
+.admin-modal{
+    display: grid;
+    grid-row-gap: 15px;
+    padding: 10px 30px;
+    justify-self: center;
+    background-color: #21355B;
+    border: 2px solid #E5E5E5;
+    border-radius: 30px;
+    width: 260px;
+}
+
+.admin-modal h3{
+    margin: 0px;
+    font-size: 14px;
+    justify-self: center;
+}
+
+.admin-modal form{
+    display: grid;
+    row-gap: 25px;
+}
+
+.admin-modal .inputs{
+    display: grid;
+    row-gap: 10px;
+    grid-template-rows: repeat(4, 1fr);
+}
+
+.admin-modal .label{
+    display: grid;
+    grid-template-columns: 0.6fr auto;
+    column-gap: 5px;
+    font-size: 12px !important;
+    align-items: stretch;
+}
+
+.admin-modal .label label{
+    align-self: center;
+}
+
+.admin-modal select,.admin-modal input, .admin-modal textarea, .admin-modal .input{
+    font-size: 12px;
+    background: none;
+    border-radius: 30px;
+    border: 2px solid #E5E5E5;
+    color: white;
+    text-align: center;
+    text-align-last:center;
+    width: 130px;
+    height: 22px;
+    justify-self: end;
+    box-sizing: border-box;
+}
+
+.admin-modal textarea{
+    height: 100%;
+    border-radius: 10px;
+    text-align: start;
+}
+
+.admin-modal select option{
+    color: black;
+}
+
+.admin-modal input[type="date"]::-webkit-calendar-picker-indicator{
+    display: none;
+}
+
+.admin-modal button{
+    font-size: 10px;
+}
+
+.admin-modal .message{
+    font-size: 12px;
+    justify-self: center;
+    text-align: center;
+}
+
+
+
+.danger-message{
+    color: red;
+}
+.success-message{
+    color: green;
+}
+
+
+.hiddenRu, .hiddenShop, #body, .hiddenAll{
+    transition: 0.6s;
+}
+#monitors{
+    transition: 0.59s;
+}
+
+
+
+
+
+
+
+
+
+
+.blockOfSuccesses iframe{
+    width: 588px !important;
+    height: calc(100vh - 100px) !important;
+
+    @media screen and ( max-width: 730px ) {
+        width: 400px !important;
+    }
+    @media screen and ( max-width: 480px ) {
+        width: 100% !important;
+    }
+}
+ 
+@media screen and ( max-width: 480px ){
+    .blockOfSuccesses{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+
+
+
+.tbody * {
+    transition: 0s;
+}
