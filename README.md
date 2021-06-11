@@ -1,4 +1,11 @@
-# Quasar
+# QuasarCook
+
+This project is landing for dashboard of CactusDashboard of [QuasarCook](https://vk.com/quasarcook). <br />
+Landing url: [https://quasarcook.com](https://quasarcook.com) <br />
+Dashboard url: [https://dash.quasarcook.com](https://dash.quasarcook.com) <br /> <br />
+
+***Copyright belongs to [CactusWeb](https://manager.cactusweb.io).*** <br />
+***Exclusive use rights belong to [QuasarCook](https://quasarcook.com).***
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.1.
 

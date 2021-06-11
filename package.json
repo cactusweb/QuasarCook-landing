@@ -1,6 +1,11 @@
 {
   "name": "quasar",
   "version": "1.0.0",
+  "author": {
+    "name": "CactusWeb",
+    "email": "info@cactusweb.io",
+    "url": "https://githib.com/cactusweb"
+  },
   "scripts": {
     "ng": "ng",
     "start": "ng serve --proxy-config proxy.conf.json",
