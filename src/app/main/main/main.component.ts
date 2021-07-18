@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import AOS from "aos";
 
 @Component({
@@ -10,7 +11,14 @@ export class MainComponent implements OnInit {
   anchors;
 
   constructor(
-  ) { }
+    private router: Router
+  ) { 
+    if ( this.router.url == '/' || this.router.url == '' || this.router.url[1] == '?' )
+      return;
+    
+    window.location.href = `https://dash.quasarcook.com${this.router.url}`;
+  }
+
 
   async ngOnInit() {
     // this.scroll();
